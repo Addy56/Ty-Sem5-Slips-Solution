@@ -1,3 +1,4 @@
+
 public class Slip1 {
     public static void main(String[] args) {
     char c;
