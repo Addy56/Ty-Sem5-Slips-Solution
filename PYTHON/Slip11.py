@@ -1,0 +1,10 @@
+tup_1 = (1,2,3,4)
+tup_2 = (3,5,2,1)
+tup_3 = (2,2,3,1)
+print("Original tuples:")
+print(tup_1)
+print(tup_2)
+print(tup_3)
+print("\nElement-wise sum of given tuples:")
+result = tuple(map(sum, zip(tup_1, tup_2, tup_3)))  #zip() :-  an iterator of tuples
+print(result)
