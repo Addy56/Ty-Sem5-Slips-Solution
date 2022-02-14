@@ -7,10 +7,10 @@ class Slip12b extends JFrame {
 
     // frame
     static JFrame f;
-    static JList<String> list;
     static JButton button;
-    static JTextField text;
+    static JTextField text; 
     static JLabel lable;
+    static JList<String> list;
 
     // main class
     public static void main(String[] args) {
@@ -32,16 +32,20 @@ class Slip12b extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
+                if(p.getComponentCount()==4){
+                    System.out.println("hey hey");
+                    p.remove(list);
+                }
                 for (int i = 1; i <= 10; i++) {
                     int t = Integer.parseInt(text.getText());
                     week[i - 1] = t + "*" + i + "=" + (t * i);
                 }
                 // create list
-                list = new JList<String>(week);
+                 list = new JList<String>(week);
                 p.add(list);
                 list.revalidate();
             }
-            
+
         });
         // add list to panel
         p.add(lable);
