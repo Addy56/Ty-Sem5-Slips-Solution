@@ -4,7 +4,6 @@
 // one file to another
 
 import java.io.*;
-import java.util.*;
 
 public class Slip18b {
 
